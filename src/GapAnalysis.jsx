@@ -970,3 +970,6 @@ Known gaps / actual tool behaviour: ${r.actualBehaviour || "Not specified — in
           </div>
         </div>
       )}
+    </div>
+  );
+}
