@@ -74,6 +74,11 @@ const styles = `
     color: #2a2a2a;
     font-weight: 300;
   }
+{
+  path: "/benefits-realisation",
+  name: "Benefits Realisation Tracker",
+  description: "RAG-rated snapshot of expected vs actual benefits — per initiative, executive-ready."
+}
 `;
 
 const tools = [
