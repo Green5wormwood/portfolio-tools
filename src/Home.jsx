@@ -74,11 +74,6 @@ const styles = `
     color: #2a2a2a;
     font-weight: 300;
   }
-{
-  path: "/benefits-realisation",
-  name: "Benefits Realisation Tracker",
-  description: "RAG-rated snapshot of expected vs actual benefits — per initiative, executive-ready."
-}
 `;
 
 const tools = [
@@ -91,6 +86,11 @@ const tools = [
     path: "/gap-analysis",
     name: "Tool Gap Analysis",
     description: "Compare ideal process steps against what a tool actually supports — per role, with gap types and severity."
+  },
+  {
+    path: "/benefits-realisation",
+    name: "Benefits Realisation Tracker",
+    description: "RAG-rated snapshot of expected vs actual benefits — per initiative, executive-ready."
   }
 ];
 
@@ -101,10 +101,10 @@ export default function Home() {
       <style>{styles}</style>
       <div className="home-header">
         <h1>
-  <span style={{ color: "#7eb8a4" }}>Portfolio</span><br />
-  <span style={{ color: "#7eb8a4" }}><em>Tools</em></span>
-</h1>
-<div style={{ fontFamily: "'Playfair Display', serif", fontSize: "1rem", color: "#1a3a5c", marginTop: "12px" }}> by Ioana Emilia</div>
+          <span style={{ color: "#7eb8a4" }}>Portfolio</span><br />
+          <span style={{ color: "#7eb8a4" }}><em>Tools</em></span>
+        </h1>
+        <div style={{ fontFamily: "'Playfair Display', serif", fontSize: "1rem", color: "#1a3a5c", marginTop: "12px" }}>by Ioana Emilia</div>
         <p>A collection of AI-powered research and analysis tools. Each uses your own Anthropic API key — no data stored, session only.</p>
       </div>
       <div className="tools-label">Available Tools</div>
@@ -118,9 +118,9 @@ export default function Home() {
         </div>
       ))}
       <div className="footer">
-  <div style={{ marginBottom: 12, color: "#e8e2d9", fontFamily: "'Playfair Display', serif", fontSize: "1rem" }}></div>
-  <div>Session only · No storage · Powered by Claude</div>
-</div>
+        <div>Session only · No storage · Powered by Claude</div>
+      </div>
     </div>
   );
 }
+```
