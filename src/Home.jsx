@@ -79,7 +79,7 @@ const styles = `
 const tools = [
   {
     path: "/journey-map",
-    name: "Community Journey Map",
+    name: "Customer Journey Map",
     description: "Synthesise interview notes into a structured journey map with stages, emotional curve, pain points, and opportunities."
   },
   {
@@ -108,7 +108,10 @@ export default function Home() {
           <div className="tool-card-arrow">→</div>
         </div>
       ))}
-      <div className="footer">Session only · No storage · Powered by Claude</div>
+      <div className="footer">
+  <div style={{ marginBottom: 12, color: "#e8e2d9", fontFamily: "'Playfair Display', serif", fontSize: "1rem" }}>Ioana Emilia</div>
+  <div>Session only · No storage · Powered by Claude</div>
+</div>
     </div>
   );
 }
