@@ -95,7 +95,11 @@ export default function Home() {
     <div className="home">
       <style>{styles}</style>
       <div className="home-header">
-        <h1>Portfolio<br /><em>Tools</em></h1>
+        <h1>
+  <span style={{ color: "#7eb8a4" }}>Portfolio</span><br />
+  <span style={{ color: "#7eb8a4" }}><em>Tools</em></span>
+</h1>
+<div style={{ fontFamily: "'Playfair Display', serif", fontSize: "1rem", color: "#1a3a5c", marginTop: "12px" }}>Ioana Emilia</div>
         <p>A collection of AI-powered research and analysis tools. Each uses your own Anthropic API key — no data stored, session only.</p>
       </div>
       <div className="tools-label">Available Tools</div>
@@ -109,7 +113,7 @@ export default function Home() {
         </div>
       ))}
       <div className="footer">
-  <div style={{ marginBottom: 12, color: "#e8e2d9", fontFamily: "'Playfair Display', serif", fontSize: "1rem" }}>Ioana Emilia</div>
+  <div style={{ marginBottom: 12, color: "#e8e2d9", fontFamily: "'Playfair Display', serif", fontSize: "1rem" }}></div>
   <div>Session only · No storage · Powered by Claude</div>
 </div>
     </div>
